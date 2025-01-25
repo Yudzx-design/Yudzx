@@ -1,29 +1,27 @@
-// Fungsi untuk login
-function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+const loginForm = document.getElementById("loginForm");
+const errorMessage = document.getElementById("errorMessage");
+const videoContainer = document.getElementById("videoContainer");
 
-    if (username === "Yudzx" && password === "admin1") {
-        document.getElementById("login-container").style.display = "none";
-        document.getElementById("video-container").style.display = "flex";
+// Username dan Password Valid
+const validUsername = "Yudzx";
+const validPassword = "admin1";
 
-        // Masuk ke mode fullscreen
-        const video = document.getElementById("video-player");
-        video.requestFullscreen()
-            .then(() => {
-                video.play();
-            })
-            .catch((err) => {
-                console.log("Fullscreen gagal: ", err.message);
-            });
-    } else {
-        document.getElementById("error-message").textContent =
-            "Username atau Password salah!";
-    }
-}
+// Event Listener untuk Form Login
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault(); // Mencegah reload halaman
 
-// Menampilkan atau menyembunyikan password
-document.getElementById("show-password").addEventListener("change", function () {
-    const passwordField = document.getElementById("password");
-    passwordField.type = this.checked ? "text" : "password";
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (username === validUsername && password === validPassword) {
+    // Jika login berhasil, tampilkan video fullscreen
+    document.querySelector(".login-container").style.display = "none";
+    videoContainer.style.display = "flex";
+  } else {
+    // Jika login gagal, tampilkan pesan error
+    errorMessage.style.display = "block";
+    setTimeout(() => {
+      errorMessage.style.display = "none";
+    }, 3000);
+  }
 });
