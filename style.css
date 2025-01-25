@@ -1,0 +1,83 @@
+/* Global Style */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-container {
+    background-color: #151515; /* Latar gelap */
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #222;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ff4c4c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e63939;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.show-password input {
+    margin-right: 5px;
+}
+
+#error-message {
+    color: #ff4c4c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}

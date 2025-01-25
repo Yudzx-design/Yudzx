@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Halaman Login -->
+    <div class="login-container" id="login-container">
+        <h1>LOGIN TO CONTINUE</h1>
+        <p>Masukkan Username dan Password</p>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <div class="show-password">
+                <input type="checkbox" id="show-password"> Show Password
+            </div>
+            <button onclick="login()">Login</button>
+            <p id="error-message">Username atau Password salah!</p>
+        </div>
+    </div>
+
+    <!-- Halaman Video -->
+    <div class="video-container" id="video-container" style="display: none;">
+        <video id="video-player" autoplay>
+            <source src="video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
