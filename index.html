@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Kontainer Login -->
     <div class="login-container" id="login-container">
         <h1>JAWA DILARANG LOGIN</h1>
         <p>Masukkan Username dan Password</p>
@@ -19,10 +20,21 @@
             <button onclick="login()">Login</button>
             <p id="error-message"></p>
         </div>
+
+        <!-- Logo Sosial Media -->
+        <div class="social-media">
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="tiktok-logo.png" alt="TikTok Logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram Logo">
+            </a>
+        </div>
     </div>
 
+    <!-- Kontainer Video -->
     <div class="video-container" id="video-container" style="display: none;">
-        <video autoplay controls>
+        <video id="video-player" autoplay>
             <source src="video.mp4" type="video/mp4">
             Browser Anda tidak mendukung video.
         </video>
