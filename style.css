@@ -8,19 +8,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .login-container {
     text-align: center;
-    background: #fff;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Warna gradasi */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 350px;
+    color: white;
 }
 
 h1 {
-    color: #d32f2f;
+    color: #fff;
     font-size: 22px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -28,7 +30,7 @@ h1 {
 
 p {
     font-size: 14px;
-    color: #666;
+    color: #f3eaea;
     margin-bottom: 20px;
 }
 
@@ -36,16 +38,18 @@ p {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
     font-size: 14px;
+    background: #fff;
+    color: #333;
 }
 
 .show-password {
     display: flex;
     align-items: center;
     font-size: 12px;
-    color: #666;
+    color: #f3eaea;
     margin-bottom: 15px;
 }
 
@@ -54,7 +58,70 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #1976d2;
+    background-color: #ff5f7e;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;/* Styling untuk halaman login */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-container {
+    text-align: center;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Warna gradasi */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    color: white;
+}
+
+h1 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    color: #f3eaea;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #f3eaea;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5f7e;
     color: white;
     font-size: 14px;
     cursor: pointer;
@@ -62,13 +129,26 @@ button {
 }
 
 button:hover {
-    background-color: #0d47a1;
+    background-color: #ff3c61;
 }
 
-#error-message {
-    color: red;
-    font-size: 12px;
-    margin-top: 10px;
+/* Logo sosial media */
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
 }
 
 /* Styling untuk video */
@@ -79,11 +159,53 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-color: black;
+    position: relative;
 }
 
 video {
-    width: 80%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff3c61;
+}
+
+/* Logo sosial media */
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Styling untuk video */
+.video-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
